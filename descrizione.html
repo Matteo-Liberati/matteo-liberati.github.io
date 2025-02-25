@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progetto - catena di negozi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Benvenuto nel mio Progetto: catena di negozi</h1>
+    <img src="progetto.png" alt="Logo del Progetto">
+    <h2>Descrizione</h2>
+    <p>il mio progetto rappresenta una catena di negozi interconnessi tra di loro.
+        vi sono 3 sedi, una è la sede principale che ha il compito di gestire il sito del negozio dove la gente
+        può acquistare i prodotti, le altre due sedi sono i negozi fisici che vendono i prodotti.
+        una sede è più piccola ed è configurata a mano mentre le due sedi più grandi sono configurate 
+        tramite DHCP.
+        il server offre i seguenti servizi: HTTP/HTTPS, DNS e DHCP.
+        Inoltre si puo avere un'esepio di come la sede centrale si interfacccia con un eventuale cliente.
+        qui di seguito troverete delle tabelle con la lista degli indirizzi IP utilizzati.
+    </p>
+    <h2>sede centrale</h2>
+    <img src="sedecentrale.png" alt="Sede Centrale">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>dispositivi</th>
+                    <th>indirizzi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rete</td>
+                    <td>192.168.1.0</td>
+                </tr>
+                <tr>
+                    <td>default gateway</td>
+                    <td>192.168.1.254</td>
+                </tr>
+                <tr>
+                    <td>server DNS</td>
+                    <td>8.8.8.8</td>
+                </tr>
+                <tr>
+                    <td>rete Vlan assistenza</td>
+                    <td>192.168.10.0</td>
+                </tr>
+                <tr>
+                    <td>gateway assistenza</td>
+                    <td>192.168.10.254</td>
+                </tr>
+                <tr>
+                    <td>rete Vlan magazzini</td>
+                    <td>192.168.20.0</td>
+                </tr>
+                <tr>
+                    <td>gateway magazzini</td>
+                    <td>192.168.20.254</td>
+                </tr>
+                <tr>
+                    <td>rete Vlan gestione database</td>
+                    <td>192.168.30.0</td>
+                </tr>
+                <tr>
+                    <td>gateway gestione database</td>
+                    <td>192.168.30.254</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>sede 1</h2>
+        <img src="sedepiccola.png" alt="Sede piccola">    
+        <table>
+            <thead>
+                <tr>
+                    <th>dispositivi</th>
+                    <th>indirizzi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rete</td>
+                    <td>192.168.3.0</td>
+                </tr>
+                <tr>
+                    <td>default gateway</td>
+                    <td>192.168.3.254</td>
+                </tr>
+                <tr>
+                    <td>server DNS</td>
+                    <td>8.8.8.8</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>sede 2</h2>
+        <img src="sedegrande.png" alt="Sede grande">    
+        <table>
+            <thead>
+                <tr>
+                    <th>dispositivi</th>
+                    <th>indirizzi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rete</td>
+                    <td>192.168.4.0</td>
+                </tr>
+                <tr>
+                    <td>default gateway</td>
+                    <td>192.168.4.254</td>
+                </tr>
+                <tr>
+                    <td>server DNS</td>
+                    <td>8.8.8.8</td>
+                </tr>
+                <tr>
+                    <td>rete Vlan casse</td>
+                    <td>192.168.50.0</td>
+                </tr>
+                <tr>
+                    <td>gateway assistenza</td>
+                    <td>192.168.50.254</td>
+                </tr>
+                <tr>
+                    <td>rete Vlan magazzini</td>
+                    <td>192.168.51.0</td>
+                </tr>
+                <tr>
+                    <td>gateway magazzini</td>
+                    <td>192.168.51.254</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>client</h2>
+        <img src="casa.png" alt="casa">    
+        <table>
+            <thead>
+                <tr>
+                    <th>dispositivi</th>
+                    <th>indirizzi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>rete</td>
+                    <td>192.168.0.0</td>
+                </tr>
+                <tr>
+                    <td>default gateway</td>
+                    <td>192.168.0.254</td>
+                </tr>
+                <tr>
+                    <td>server DNS</td>
+                    <td>8.8.8.8</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>routing tra le sedi</h2>
+        <img src="routing.png" alt="routing">    
+        <table>
+            <thead>
+                <tr>
+                    <th>dispositivi</th>
+                    <th>indirizzi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>router 0/4</td>
+                    <td>20.8.0.0</td>
+                </tr>
+                <tr>
+                    <td>router 0/3</td>
+                    <td>10.8.0.0</td>
+                </tr>
+                <tr>
+                    <td>router 4/3</td>
+                    <td>30.8.0.0</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <a href="index.html" class="cta">torna alla home</a>
+</body>
+</html>
